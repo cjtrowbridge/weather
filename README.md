@@ -25,13 +25,13 @@ In this assignment you will learn about:
 1. The program terminates at this point. It does not go back and re-prompt the user.
 
 ## Sample Output
-$ ./weather 95677
-Current Conditions
-Observation time: Last Updated on May 10, 5:18 PM PDT
-Location: Rockin, CA
-Temperature: 81.7 F
-Humidity: 40%
-Wind: SSW 5.8 mph
+$ ./weather 95677  
+Current Conditions  
+Observation time: Last Updated on May 10, 5:18 PM PDT  
+Location: Rockin, CA  
+Temperature: 81.7 F  
+Humidity: 40%  
+Wind: SSW 5.8 mph  
 
 Try to follow this output format as closely as possible. Make sure you remove any extraneous characters that are in the JSON document but not part of the data itself, such as quotation marks and colons.
 
@@ -63,18 +63,18 @@ http://api.wunderground.com/api/1655f919bbcd29ed/conditions/forecast10day/q/ZIPC
 Note that you'll get 10 days of forecast, but you should display just four of them. You should show the day of the week, the high temperature, and the low temperature, like this:
 
 $ ./weather 95677
-Current Conditions
-Observation time: Last Updated on May 12, 10:18 AM PDT
-Location: Rocklin, CA
-Temperature: 65.7 F
-Humidity: 40%
-Wind: SSW 5.8 mph
+Current Conditions  
+Observation time: Last Updated on May 12, 10:18 AM PDT  
+Location: Rocklin, CA  
+Temperature: 65.7 F  
+Humidity: 40%  
+Wind: SSW 5.8 mph  
 
-Forecast
-Tuesday: 77 48
-Wednesday: 77 49
-Thursday: 76 51
-Friday: 76 50
+Forecast  
+Tuesday: 77 48  
+Wednesday: 77 49  
+Thursday: 76 51  
+Friday: 76 50  
 All the data you need is in the JSON document, including the days of the week. You'll see that the entries are numbered by "period." To get the next four days of forecast, use periods 1, 2, 3, and 4.
 
 You can get 1 point instead of 2 for simply displaying the predicted high and low of any one of the next four days. In other words, if you are unable to get the program to display four days' of predictions, just do one day.
