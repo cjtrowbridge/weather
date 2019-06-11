@@ -42,7 +42,7 @@ Once you have the socket connected, you get back an integer socket file descript
 
 It's more convenient to use the buffered file handling functions provided by the FILE structure. It's easy to convert a file descriptor into a FILE pointer. Just call the fdopen function:
 
-FILE *s = fdopen(sockfd, "r+");
+FILE *s = fdopen(sockfd, "r+");  
 (You will, of course, need to check the value of s to ensure it's pointing to a valid file/socket.)
 
 Once you have a valid FILE pointer, you can read from it using any of the stdio functions that work with files: fgets, fscanf, etc.
